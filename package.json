@@ -1,0 +1,23 @@
+{
+  "name": "ne-logistics-platform",
+  "version": "1.0.0",
+  "description": "ATLAS — Smart Logistics & Route Intelligence Platform for North-East India",
+  "main": "backend/server.js",
+  "scripts": {
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "dev": "node scripts/start.js",
+    "server": "npm --prefix backend run dev",
+    "client": "npm --prefix frontend start",
+    "build": "cd frontend && npm run build",
+    "start": "node scripts/start.js",
+    "start:api": "node backend/server.js",
+    "test:startup": "node --test scripts/start.test.js",
+    "test:startup:smoke": "node scripts/start.smoke.js"
+  },
+  "keywords": ["logistics", "tracking", "route-optimization", "real-time"],
+  "author": "Ministry of DoNER",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
